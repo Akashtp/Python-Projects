@@ -28,8 +28,7 @@ def recordAudio():
         data = r.recognize_google(audio)
         print("You said "+ data)
     except sr.UnknownValueError:
-        print("Sorry I didn't catch that!")
-    except sr.RequestError as e:
+        print("Sorry I didn't catch that!")    except sr.RequestError as e:
         print("Request error from google Speech recognition")
     return data
 
